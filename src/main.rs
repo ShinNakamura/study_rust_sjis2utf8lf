@@ -24,5 +24,6 @@ fn main() -> MyResult {
         // writeln! を使用することでプラットフォームの改行コード＝LFで出力
         writeln!(out, "{}", line)?; 
     }
+    out.flush().unwrap();
     Ok(())
 }
